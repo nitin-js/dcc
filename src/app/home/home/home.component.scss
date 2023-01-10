@@ -1,0 +1,118 @@
+$black: #000000;
+$red: #D53824;
+$dark-red: #951A1A;
+$white: #ffffff;
+
+.part-1{
+  background-image: url('../../../assets/images/1.png');
+  background-position: -21vw 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.part-2{
+  background-image: url('../../../assets/images/2.png');
+  background-position: center right;
+background-repeat: no-repeat;
+background-size: 50vw auto;
+}
+
+.part-3{
+  background-image: url('../../../assets/images/4.png');
+  background-position: bottom left;
+background-repeat: no-repeat;
+background-size: 60vw auto;
+}
+.part-4{
+  background-image: url('../../../assets/images/dream-car.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.talk{
+  border: 1px solid $dark-red;
+  color: $white;
+  background-color: $dark-red;
+  padding: 10px 25px;
+  vertical-align: top;
+  margin-top: 7px;
+  border-radius: 0;
+  &:enabled:hover{
+    border-color: $dark-red;
+    background-color: $white;
+    color: $dark-red;
+  }
+}
+.service{
+  background-color: $red;
+  transition: 0.5s;
+  
+  .service-name{
+    h2{
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      color: $white;
+    }
+  }
+  &:hover{
+    background-color: $dark-red;
+    box-shadow: 0px 2px 10px $white;
+    .service-logo{
+      background-color: $red;
+      box-shadow: 0px 2px 3px $white;
+    }
+  }
+}
+.service-logo{
+  position: absolute;
+  top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $dark-red;
+    border-radius: 50%;
+    padding: 15px;
+    width: 80px;
+    height: 80px;
+    transition: 0.5s;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+}
+.videos{
+  border: 3px solid $white;
+  box-shadow: 0px 5px 10px $dark-red;
+  border-radius: 3px;
+}
+
+.packages{
+  width: 100%;
+  display: block;
+  &__details{
+    background-color: $white;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: relative;
+    padding: 2rem 2rem;
+    h3{
+      padding: 1.2rem 0;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 32px;
+      right: -10px;
+      height: 60px;
+      width: 90%;
+      background-color: $red;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 22px;
+      right: -10px;
+      border-bottom: 10px solid $red;
+      border-right: 10px solid transparent;
+    }
+  }
+}

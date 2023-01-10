@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+$black: #000000;
+$red: #D53824;
+$dark-red: #951A1A;
+$white: #ffffff;
+
+body{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: $white;
+  margin: 0;
+}
+
+.font-roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-6xxl{
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
+
+.black-bg{
+  background-color: $black;
+}
+
+.darkred-bg{
+  background-color: $dark-red;
+}
+
+.txt-red{
+  color: $red;
+}
+.txt-darkred{
+  color: $dark-red;
+}
+
+.red-bg{
+  background-color: $red;
+}
+
+.txt-shadow{
+  text-shadow: 0px 1px 1px $white;
+}
+.image-shadow{
+  box-shadow: 0px 4px 10px $dark-red;
+}
+
+.main{
+  background-color: $black;
+}
+.p-galleria {
+  .p-galleria-caption {
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: $black, $alpha: 0.4);
+  }
+}
+
+.p-galleria-item-wrapper {
+  height: 900px;
+
+  img {
+    height: 100%;
+  }
+}
+.heading{
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+.desc{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
+  background-color: #e4171e;
+}
+.common-head{
+  span{
+    position: relative;
+  &:before,
+  &:after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: $dark-red;
+    top: 35px;
+  }
+  &:before{
+    left: -60%;
+  }
+  &:after{
+    right: -60%;
+  }
+}
+}
+.common-border{
+  border: 3px solid $red;
+  border-radius: 5px;
+}

@@ -1,0 +1,43 @@
+$black: #000000;
+$red: #D53824;
+$dark-red: #951A1A;
+$white: #ffffff;
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background-color: rgba($color: $black, $alpha: 1);
+  border-bottom: 1px solid rgba($color: $white, $alpha: 0.3);
+  nav{
+    a{
+      font-size: 16px;
+      line-height: 21px;
+      color: $white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 15px 20px;
+      &.active{
+        background-color: $dark-red;
+        color:$white;
+      }
+    }
+    .talk{
+      border: 2px solid $red;
+      color: $white;
+      background-color: $red;
+      padding: 6px 8px;
+      vertical-align: top;
+      margin-top: 7px;
+      border-radius: 3px;
+      &:enabled:hover{
+        border-color: $red;
+        background-color: $white;
+        color: $red;
+      }
+    }
+  }
+}
+ 

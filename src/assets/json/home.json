@@ -1,0 +1,42 @@
+{
+  "banner": [
+    {
+      "url": "../../../assets/images/nit/nit-8.jpg",
+      "caption_title": "ONE STOP SOLUTION FOR YOUR VEHICLE",
+      "caption_description": "MAKE YOUR VEHICLE 100% YOURS"
+    },
+    {
+      "url": "../../../assets/images/nit/nit-6.jpg",
+      "caption_title": "ONE STOP SOLUTION FOR YOUR VEHICLE",
+      "caption_description": "MAKE YOUR VEHICLE 100% YOURS"
+    },
+    {
+      "url": "../../../assets/images/nit/nit-7.jpg",
+      "caption_title": "ONE STOP SOLUTION FOR YOUR VEHICLE",
+      "caption_description": "MAKE YOUR VEHICLE 100% YOURS"
+    }
+    
+  ],
+  "objectives": 
+    {
+      "title": "AIM/OBJECTIVE",
+      "descset_1": "To provide people with hassle free complete home solutions.",
+      "descset_2": "People often strive a lot to even achieve the necessary basic services like home cook, home cleaner, car cleaner etc, needed on a daily basis. Our system relieves the people of the tiring efforts to look for these services."
+    }
+  ,
+  "latestWork": [
+    {"url": "../../../assets/images/nit/nit-1.jpg"},
+    {"url": "../../../assets/images/nit/nit-2.jpg"},
+    {"url": "../../../assets/images/nit/nit-3.jpg"},
+    {"url": "../../../assets/images/nit/nit-4.jpg"},
+    {"url": "../../../assets/images/nit/nit-5.jpg"},
+    {"url": "../../../assets/images/nit/nit-6.jpg"},
+    {"url": "../../../assets/images/nit/nit-7.jpg"},
+    {"url": "../../../assets/images/nit/nit-8.jpg"}
+  ],
+  "problem_statement": {
+    "title": "PROBLEM STATEMENT",
+    "descset_1": "Even after putting intense efforts and investing a considerable amount of money to get the necessary services, they do not get the desired solutions. They are quite often unhappy/unsatisfied with the current services they receive.",
+    "descset_2": "There are societies/areas which are often deprived of the daily essential services due to the geographic conditions (societies that are present on the outskirts of the cities)."
+  }
+}
