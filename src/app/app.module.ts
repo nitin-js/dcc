@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import {ButtonModule} from 'primeng/button';
 import { FooterComponent } from './footer/footer.component';
+import {MenubarModule} from 'primeng/menubar';
+import {MenuModule} from 'primeng/menu';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ButtonModule
+    ButtonModule,
+    MenubarModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

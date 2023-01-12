@@ -9,7 +9,7 @@ $red: #D53824;
 $dark-red: #951A1A;
 $white: #ffffff;
 
-body{
+body {
   font-family: 'Oswald', sans-serif;
   font-size: 1rem;
   line-height: 1.3rem;
@@ -17,44 +17,63 @@ body{
   margin: 0;
 }
 
-.font-roboto{
+.font-roboto {
   font-family: 'Roboto', sans-serif;
 }
 
-.text-6xxl{
+.text-6xxl {
   font-size: 6rem;
   line-height: 6.5rem;
+
+  @media screen and (max-width: 992px) {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
-.black-bg{
+.black-bg {
   background-color: $black;
 }
 
-.darkred-bg{
+.darkred-bg {
   background-color: $dark-red;
 }
 
-.txt-red{
+.txt-red {
   color: $red;
 }
-.txt-darkred{
+
+.txt-darkred {
   color: $dark-red;
 }
 
-.red-bg{
+.red-bg {
   background-color: $red;
 }
 
-.txt-shadow{
+.txt-shadow {
   text-shadow: 0px 1px 1px $white;
 }
-.image-shadow{
+
+.image-shadow {
   box-shadow: 0px 4px 10px $dark-red;
 }
 
-.main{
+.main {
   background-color: $black;
+  padding-top: 50px;
 }
+
 .p-galleria {
   .p-galleria-caption {
     height: 100%;
@@ -69,43 +88,268 @@ body{
 .p-galleria-item-wrapper {
   height: 900px;
 
+  @media screen and (max-width: 1023px) {
+    height: 500px;
+  }
+
+  @media screen and (max-width: 991px) {
+    height: 360px;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 300px;
+  }
+
+  @media screen and (max-width: 478px) {
+    height: 200px;
+  }
+
   img {
     height: 100%;
   }
 }
-.heading{
+
+.heading {
   font-size: 3rem;
   line-height: 3.5rem;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 992px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
-.desc{
+
+.desc {
   font-size: 1.2rem;
   line-height: 1.8rem;
+
+  @media screen and (max-width: 992px) {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
 }
-.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button{
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
   background-color: #e4171e;
 }
-.common-head{
-  span{
+
+.common-head {
+  span {
     position: relative;
-  &:before,
-  &:after{
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    background-color: $dark-red;
-    top: 35px;
-  }
-  &:before{
-    left: -60%;
-  }
-  &:after{
-    right: -60%;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      background-color: $dark-red;
+      top: 35px;
+      @media screen and (max-width: 991px){
+        top: 20px;
+      }
+    }
+
+    &:before {
+      left: -60%;
+    }
+
+    &:after {
+      right: -60%;
+    }
+    @media screen and (max-width: 478px) {
+      &:before {
+        left: -30%;
+      }
+  
+      &:after {
+        right: -30%;
+      }
+    }
   }
 }
-}
-.common-border{
+
+.common-border {
   border: 3px solid $red;
   border-radius: 5px;
+}
+
+.p-carousel {
+  .p-carousel-indicators {
+    .p-carousel-indicator {
+      button {
+        width: 0.5rem;
+      }
+    }
+  }
+}
+
+.p-menubar {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+
+  .p-menubar-button {
+    margin-left: 0.5rem;
+
+  }
+
+  ul {
+    padding-left: 2rem;
+
+    @media (max-width: 1024px) {
+      padding-left: 0;
+    }
+  }
+
+  p-menubarsub.p-element {
+    width: 75%;
+    text-align: right;
+
+    .p-menubar-root-list {
+      justify-content: end;
+    }
+
+    .p-menuitem {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0;
+
+      .p-menuitem-link {
+        color: $white;
+        padding: 1rem;
+        border-radius: 0;
+
+        .p-menuitem-text {
+          color: $white;
+        }
+
+        &:not(.p-disabled):hover {
+          background-color: $dark-red;
+          color: $white;
+
+          .p-menuitem-text {
+            color: $white;
+          }
+        }
+
+        &.p-menuitem-link-active {
+          background-color: $dark-red;
+          color: $white;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+  }
+
+  .p-menubar-start {
+    width: 10%;
+    text-align: right;
+  }
+
+  .p-menubar-end {
+    .talk {
+      border: 2px solid $red;
+      color: $white;
+      background-color: $red;
+      padding: 6px 8px;
+      vertical-align: top;
+      margin-top: 0px;
+      border-radius: 0px;
+
+      &:enabled:hover {
+        border-color: $red;
+        background-color: $white;
+        color: $red;
+      }
+    }
+  }
+
+  @media (max-width: 960px) {
+    display: block !important;
+
+    .p-menubar-root-list {
+      background-color: $black;
+    }
+
+    .p-menubar-button {
+      background-color: $black;
+      color: $white;
+      display: block;
+      float: right;
+
+      &:hover {
+        background-color: $dark-red;
+
+        .pi {
+          color: $white;
+        }
+      }
+
+      .pi {
+        padding: 7px 0 0 7px;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &.p-menubar-mobile-active {
+      .p-menubar-root-list {
+        top: 35px;
+      }
+    }
+
+    .p-menubar-end {
+      float: right;
+    }
+  }
+
+  .p-button {
+    &.p-button-text {
+      background-color: transparent;
+      color: $white;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    .vertical-bottom,
+    .p-button {
+      vertical-align: middle;
+    }
+
+    .p-menubar-end {
+      padding: 0;
+    }
+  }
 }

@@ -11,6 +11,9 @@ $white: #ffffff;
   z-index: 99999;
   background-color: rgba($color: $black, $alpha: 1);
   border-bottom: 1px solid rgba($color: $white, $alpha: 0.3);
+  @media screen and (max-width:960px) {
+    padding: 15px 0 5px;
+  }
   nav{
     a{
       font-size: 16px;
@@ -24,20 +27,7 @@ $white: #ffffff;
         color:$white;
       }
     }
-    .talk{
-      border: 2px solid $red;
-      color: $white;
-      background-color: $red;
-      padding: 6px 8px;
-      vertical-align: top;
-      margin-top: 7px;
-      border-radius: 3px;
-      &:enabled:hover{
-        border-color: $red;
-        background-color: $white;
-        color: $red;
-      }
-    }
+    
   }
 }
  
