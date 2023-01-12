@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { HomeService } from 'src/app/_shared/home/home.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
   objectives:any;
   problemStatement: any
 
-  constructor(private homeService: HomeService){
+  constructor(private homeService: HomeService, private router: Router){
     this.responsiveOptions = [
       {
           breakpoint: '1024px',
@@ -46,7 +47,10 @@ export class HomeComponent implements OnInit {
       console.log(this.objectives);
       
     });
-    
+  }
+
+  gotoPackage() {
+    this.router.navigate(['/packages']);
   }
 
 }
