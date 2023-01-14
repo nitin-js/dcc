@@ -35,9 +35,9 @@ background-size: 60vw auto;
   background-color: $dark-red;
   padding: 10px 25px;
   vertical-align: top;
-  margin-top: 7px;
+  margin-top: 15px;
   border-radius: 0;
-  &:enabled:hover{
+  &:hover{
     border-color: $dark-red;
     background-color: $white;
     color: $dark-red;
