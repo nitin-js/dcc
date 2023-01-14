@@ -87,10 +87,17 @@ background-size: 60vw auto;
   box-shadow: 0px 5px 10px $dark-red;
   border-radius: 3px;
 }
-
+.shadow-2bx{
+  box-shadow: inset 0px 0px 5px #504e4e;
+  background-color: #0f0f0f;
+}
+.our-client{
+  background-color: rgba($color: $white, $alpha: 0.15);
+}
 .packages{
   width: 100%;
   display: block;
+  background-color: rgba($color: $white, $alpha: 0.15);
   &__details{
     background-color: $white;
     border-top-left-radius: 100px;

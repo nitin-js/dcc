@@ -13,20 +13,30 @@
   </p-galleria>
 
   <div class="w-full">
-    <div class="card">
-      <div class="flex card-container bg-white overflow-hidden">
-          <div class="flex-none flex align-items-center font-bold txt-darkred px-3">Referral Programme:</div>
-          <div class="flex-grow-1 flex align-items-center">
-            <marquee direction="left" class="font-roboto text-md txt-darkred py-3 px-2" scrolldelay="100" behavior="loop">
-              <b>3 Referrals</b> One free seat Dry-Cleaning (Need to be availed within 3 months).
-              <b>5 Referrals</b> One free seat Dry-Cleaning and one free Interior Spa (Need to be availed within 3 months).
-            </marquee>
+    <div class="w-full px-4 lg:px-0 lg:w-9 mx-auto py-4 lg:py-6">
+      <div class="md:flex flex-wrap card-container">
+        <div
+          class="flex-1 flex align-items-center justify-content-center text-4xl font-roboto text-bold line-height-1 py-4 md:py-0">
+          Referral Programme</div>
+        <div class="flex-1 flex align-items-center justify-content-center pr-0 md:pr-3 pb-4 md:pb-0">
+          <div class="w-full p-4 border-round-sm shadow-2bx h-13rem">
+            <h3 class="text-3xl text-bold text-center">3 Referrals</h3>
+            <p class="text-md font-roboto text-center">One free seat Dry-Cleaning (Need to be availed within 3 months).
+            </p>
           </div>
+        </div>
+        <div class="flex-1 flex align-items-center justify-content-center  pl-0 md:pl-3">
+          <div class="w-full p-4 border-round-sm shadow-2bx h-13rem">
+            <h3 class="text-3xl text-bold text-center">5 Referrals</h3>
+            <p class="text-md text-center font-roboto">One free seat Dry-Cleaning and one free Interior Spa (Need to be
+              availed within 3 months).</p>
+          </div>
+        </div>
       </div>
+    </div>
+
   </div>
-   
-  </div>
-  
+
 
   <!--aim and objective section start  -->
   <div class="part-1">
@@ -188,7 +198,8 @@
             <div class="packages__details text-center h-full w-full image-shadow">
               <h3 class="text-md md:text-2xl font-roboto text-center text-white relative m-0 z-1">Monthly</h3>
               <p class="text-md text-center text-black-alpha-90 h-5rem pt-2">No Discount</p>
-              <p class="text-sm txt-red text-center font-italic m-0 pb-2">Note: <sup>*</sup>All discounts are applicable only once</p>
+              <p class="text-sm txt-red text-center font-italic m-0 pb-2">Note: <sup>*</sup>All discounts are applicable
+                only once</p>
               <button type="button" pButton pRipple label="View More" (click)="gotoPackage()" class="talk"></button>
             </div>
           </div>
@@ -197,9 +208,11 @@
           <div class="w-full h-full flex px-3">
             <div class="packages__details text-center h-full image-shadow">
               <h3 class="text-md md:text-2xl font-roboto text-center text-white relative m-0 z-1">3 Monthly</h3>
-              <p class="text-md text-center text-black-alpha-90 h-5rem pt-2">One free seat Dry-Cleaning (Need to be availed
+              <p class="text-md text-center text-black-alpha-90 h-5rem pt-2">One free seat Dry-Cleaning (Need to be
+                availed
                 within 3 months).</p>
-                <p class="text-sm txt-red text-center font-italic m-0 pb-2">Note: <sup>*</sup>All discounts are applicable only once</p>
+              <p class="text-sm txt-red text-center font-italic m-0 pb-2">Note: <sup>*</sup>All discounts are applicable
+                only once</p>
               <button type="button" pButton pRipple label="View More" (click)="gotoPackage()" class="talk"></button>
             </div>
           </div>
@@ -208,16 +221,18 @@
           <div class="w-full h-full flex px-3">
             <div class="packages__details text-center h-full image-shadow">
               <h3 class="text-md md:text-2xl font-roboto text-center text-white relative m-0 z-1">6 Monthly</h3>
-              <p class="text-md text-center text-black-alpha-90 h-5rem pt-2">One free seat Dry-Cleaning and one free Interior
+              <p class="text-md text-center text-black-alpha-90 h-5rem pt-2">One free seat Dry-Cleaning and one free
+                Interior
                 Spa (Need to be availed within 3 months).</p>
-                <p class="text-sm txt-red text-center font-italic m-0 pb-2">Note: <sup>*</sup>All discounts are applicable only once</p>
+              <p class="text-sm txt-red text-center font-italic m-0 pb-2">Note: <sup>*</sup>All discounts are applicable
+                only once</p>
               <button type="button" pButton pRipple label="View More" (click)="gotoPackage()" class="talk"></button>
             </div>
           </div>
 
         </div>
       </div>
-      
+
     </div>
   </div>
 
@@ -280,7 +295,8 @@
     <div class="w-full px-4 lg:px-0 lg:w-9 mx-auto py-4 lg:py-8">
       <!-- <h6 class="text-md txt-red uppercase text-center">your one stop solutions</h6> -->
       <h2 class="font-roboto heading uppercase m-0 txt-red text-center">Our Latest Work</h2>
-      <p class="font-roboto desc text-center px-4 md:px-0 md:w-6 mx-auto">It is a long established fact that a reader will be distracted
+      <p class="font-roboto desc text-center px-4 md:px-0 md:w-6 mx-auto">It is a long established fact that a reader
+        will be distracted
         by the readable
         content of a page when looking at its layout.</p>
 
@@ -301,6 +317,26 @@
     </div>
   </div>
 
+
+  <div class="w-full our-client">
+    <div class="w-full px-4 lg:px-0 lg:w-9 mx-auto py-4 lg:py-6">
+      <h2 class="font-roboto heading uppercase m-0 txt-red text-center pb-6">Our Clients</h2>
+      <div class="md:flex flex-wrap card-container">
+        <div class="flex-1 flex align-items-center justify-content-center">
+          <img src="../../../assets/images/tata.png" alt="">
+        </div>
+        <div class="flex-1 flex align-items-center justify-content-center">
+          <img src="../../../assets/images/toyota.png" alt="">
+        </div>
+        <div class="flex-1 flex align-items-center justify-content-center">
+          <img src="../../../assets/images/hundai.png" alt="">
+        </div>
+        <div class="flex-1 flex align-items-center justify-content-center">
+          <img src="../../../assets/images/nissan.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- dream car -->
   <div class="part-4">
     <div class="w-full px-4 lg:px-0 lg:w-9 mx-auto py-4">
